@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YarachHomeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/top_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/top_img"
+                    android:layout_marginTop="-40px"
+                    android:layout_marginBottom="-540px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingRight="20dp"
+                android:paddingBottom="0dp">
+
+                <TextView
+                    android:id="@+id/yarach_learning_logo"
+                    style="@style/TextAppearance.Material3.BodyMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:text="Yarach Обучение"
+                    android:textFontWeight="900"
+                    android:fontFamily="@font/open_sans"
+                    android:textSize="25dp"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    style="@style/TextAppearance.Material3.BodyMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:text="Секунду..."
+                    android:textFontWeight="700"
+                    android:fontFamily="@font/open_sans"
+                    android:textSize="25dp"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:id="@+id/user_hello"
+                    style="@style/TextAppearance.Material3.BodySmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:text="добро пожаловать в Yarach Обучение"
+                    android:fontFamily="@font/open_sans"
+                    android:textSize="16dp"
+                    android:textFontWeight="400"
+                    android:textColor="#ffffff"/>
+
+                <ImageView
+                    android:id="@+id/icon_mycourses"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="60sp"
+                    app:srcCompat="@drawable/home_mycourses" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/text_mycourses"
+                        style="@style/TextAppearance.Material3.BodyMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/open_sans"
+                        android:text="Мои курсы обучения"
+                        android:textFontWeight="700"
+                        android:textSize="22dp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/text_mycourses_under"
+                    style="@style/TextAppearance.Material3.BodySmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contextClickable="true"
+                    android:layout_marginTop="0dp"
+                    android:text="Курсы, на которых вы обучаетесь"
+                    android:fontFamily="@font/open_sans"
+                    android:textSize="16dp"
+                    android:textFontWeight="400"/>
+                <TextView
+                    android:id="@+id/btn_mycourses"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/button_rounded_corners_two"
+                    android:fontFamily="@font/open_sans"
+                    android:paddingTop="7sp"
+                    android:paddingBottom="7sp"
+                    android:text="Перейти к курсам"
+                    android:textAllCaps="false"
+                    android:textFontWeight="600"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/purple_500"/>
+
+                <ImageView
+                    android:id="@+id/icon_createdcourses"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="45sp"
+                    app:srcCompat="@drawable/home_createdcourses" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/text_createdcourses"
+                        style="@style/TextAppearance.Material3.BodyMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/open_sans"
+                        android:text="Созданные курсы"
+                        android:textFontWeight="700"
+                        android:textSize="22dp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/text_createdcourses_under"
+                    style="@style/TextAppearance.Material3.BodySmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contextClickable="true"
+                    android:layout_marginTop="0dp"
+                    android:text="Курсы, которые вы разместили и ведете"
+                    android:fontFamily="@font/open_sans"
+                    android:textSize="16dp"
+                    android:textFontWeight="400"/>
+                <TextView
+                    android:id="@+id/btn_createdcourses"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/button_rounded_corners_two"
+                    android:fontFamily="@font/open_sans"
+                    android:paddingTop="7sp"
+                    android:paddingBottom="7sp"
+                    android:text="Перейти к курсам"
+                    android:textAllCaps="false"
+                    android:textFontWeight="600"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/purple_500"/>
+            </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

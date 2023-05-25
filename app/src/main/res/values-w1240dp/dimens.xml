@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="activity_horizontal_margin">200dp</dimen>
+    <dimen name="activity_horizontal_margin_two">2120dp</dimen>
+</resources>

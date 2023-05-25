@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin_two"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin_two"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/image_start_page1" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TextAppearance.MaterialComponents.Tooltip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/open_sans"
+            android:paddingBottom="15dp"
+            android:text="Платформа для обучения и преподавания"
+            android:textAlignment="center"
+            android:textFontWeight="800"
+            android:textSize="40sp"
+            android:textStyle="normal" />
+
+        <TextView
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45sp"
+            android:fontFamily="@font/open_sans"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:text="Учитесь новому онлайн или ведите собственные курсы"
+            android:textAlignment="center"
+            android:textFontWeight="450"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/start_mainBtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:background="@drawable/button_rounded_corners"
+            android:fontFamily="@font/open_sans"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Войти в аккаунт"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textFontWeight="600"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/start_mainBtn2"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:contextClickable="true"
+            android:fontFamily="@font/open_sans"
+            android:text="Зарегистрироваться"
+            android:textAlignment="center"
+            android:textFontWeight="450"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
