@@ -8,11 +8,15 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -21,6 +25,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 import retrofit2.Call;
 import retrofit2.Response;
@@ -63,6 +68,10 @@ public class AboutCourseActivity extends AppCompatActivity {
     TextView text_aboutcourse_b3_m;
     TextView text_aboutcourse_b3_1;
 
+    private ArrayAdapter<String> mAdapter;
+    ArrayList<String> arrayLessonsTitle = new ArrayList<String>();
+    ArrayList<String> arrayLessonsId = new ArrayList<String>();
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +83,9 @@ public class AboutCourseActivity extends AppCompatActivity {
         pogress_bar = (ProgressBar) findViewById(R.id.course_progress_bar);
         ImageView btn_back = (ImageView) findViewById(R.id.icon_course_back);
         TextView btn_course_main = (TextView) findViewById(R.id.btn_course_main);
+        TextView btn_aboutcourse_2 = (TextView) findViewById(R.id.btn_aboutcourse_2);
+
+        btn_back.setClickable(true);
 
         course_title = (TextView) findViewById(R.id.course_title);
         course_about = (TextView) findViewById(R.id.course_about);
@@ -116,7 +128,15 @@ public class AboutCourseActivity extends AppCompatActivity {
                 startActivity(browserIntent);
             }
         });
-
+        btn_aboutcourse_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AboutCourseActivity.this, LessonsActivity.class);
+                intent.putExtra("courseId", courseId);
+                startActivityForResult(intent, REQUEST_CODE_ACT);
+                finish();
+            }
+        });
 
         //check user email
         String path = getFilesDir().getPath().toString() + "/userInfo.txt";
@@ -296,8 +316,6 @@ public class AboutCourseActivity extends AppCompatActivity {
                         text_aboutcourse_b3_1.setText("Сертификат или диплом об оканчании данного курса не выдаётся");
                         break;
                 }
-
-
             } else {
                 Toast.makeText(getApplicationContext(), "Что-то пошло не так. Возможно, сервис недоступен. Попробуйте позже", Toast.LENGTH_SHORT).show();
             }

@@ -17,6 +17,8 @@ public class AboutCourseData {
     public String course_about_pay_period;
     public String course_cost;
     public String course_about_lang;
+    public String course_lessons_list;
+    public String course_lessons_list_withtitles;
 
     @Override
     public String toString() {
@@ -37,6 +39,8 @@ public class AboutCourseData {
                 ", course_about_pay_period=" + course_about_pay_period +
                 ", course_cost=" + course_cost +
                 ", course_certificate_about=" + course_certificate_about +
+                ", course_lessons_list=" + course_lessons_list +
+                ", course_lessons_list_withtitles=" + course_lessons_list_withtitles +
                 '}';
     }
 }

@@ -85,8 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="45dp"
             android:orientation="horizontal"
-            android:background="@drawable/button_rounded_corners_two"
-            android:padding="15dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/settings_1_img"
@@ -109,13 +108,23 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/settings_d1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:padding="2px"
+            android:background="@drawable/block_withborders">
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/settings_2_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
-            android:background="@drawable/button_rounded_corners_two"
-            android:padding="15dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/settings_2_img"
@@ -141,10 +150,9 @@
             android:id="@+id/settings_3_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
-            android:background="@drawable/button_rounded_corners_two"
-            android:padding="15dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/settings_3_img"
@@ -170,10 +178,9 @@
             android:id="@+id/settings_4_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
-            android:background="@drawable/button_rounded_corners_two"
-            android:padding="15dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/settings_4_img"
@@ -196,13 +203,23 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/settings_d2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:padding="2px"
+            android:background="@drawable/block_withborders">
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/settings_5_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
-            android:background="@drawable/button_rounded_corners_two"
-            android:padding="15dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/settings_6_img"
