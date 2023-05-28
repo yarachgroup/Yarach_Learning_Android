@@ -188,11 +188,11 @@ public class YarachCreatedCoursesActivity extends AppCompatActivity {
         protected void onPostExecute(MyCoursesData currentData) {
             super.onPostExecute(currentData);
             if (currentData.error_code.contains("200")) {
-                String[] coursesNameArray = currentData.courses_name.split(" &&%%&& ");;
+                String[] coursesNameArray = currentData.courses_name.split(" &&%%&& ");
                 for(int i = 0; i < coursesNameArray.length; i++) {
                     arrayCourses.add(coursesNameArray[i]);
                 }
-                String[] coursesIdArray = currentData.courses_id.split(" &&%%&& ");;
+                String[] coursesIdArray = currentData.courses_id.split(" &&%%&& ");
                 for(int i = 0; i < coursesIdArray.length; i++) {
                     arrayCoursesId.add(coursesIdArray[i]);
                 }
