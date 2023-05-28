@@ -80,7 +80,8 @@
                             android:textFontWeight="700"
                             android:fontFamily="@font/open_sans"
                             android:textSize="30dp"
-                            android:textColor="#ffffff" />
+                            android:textColor="#ffffff"
+                            android:textIsSelectable="true" />
 
                         <TextView
                             android:id="@+id/course_about"
@@ -91,7 +92,8 @@
                             android:fontFamily="@font/open_sans"
                             android:textSize="18dp"
                             android:textFontWeight="400"
-                            android:textColor="#ffffff" />
+                            android:textColor="#ffffff"
+                            android:textIsSelectable="true" />
 
                         <TextView
                             android:id="@+id/btn_course_main"
@@ -149,7 +151,8 @@
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/open_sans"
                         android:text="Секунду..."
-                        android:textSize="18dp" />
+                        android:textSize="18dp"
+                        android:textIsSelectable="true" />
 
                     <TextView
                         android:id="@+id/text_aboutcourse_b1_2"
@@ -168,7 +171,8 @@
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/open_sans"
                         android:text="Секунду..."
-                        android:textSize="17dp" />
+                        android:textSize="18dp"
+                        android:textIsSelectable="true" />
 
                     <TextView
                         android:id="@+id/text_aboutcourse_b1_3"
@@ -187,7 +191,8 @@
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/open_sans"
                         android:text="Секунду..."
-                        android:textSize="18dp" />
+                        android:textSize="18dp"
+                        android:textIsSelectable="true" />
 
                     <TextView
                         android:id="@+id/text_aboutcourse_b1_4"
@@ -206,7 +211,8 @@
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/open_sans"
                         android:text="Секунду..."
-                        android:textSize="18dp" />
+                        android:textSize="18dp"
+                        android:textIsSelectable="true" />
 
                     <TextView
                         android:id="@+id/text_aboutcourse_b1_5"
@@ -225,7 +231,8 @@
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/open_sans"
                         android:text="Секунду..."
-                        android:textSize="18dp" />
+                        android:textSize="18dp"
+                        android:textIsSelectable="true" />
 
                     <TextView
                         android:id="@+id/text_aboutcourse_b1_6"
@@ -244,7 +251,8 @@
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/open_sans"
                         android:text="Секунду..."
-                        android:textSize="18dp" />
+                        android:textSize="18dp"
+                        android:textIsSelectable="true" />
 
                     <!-- Teacher !-->
 
@@ -267,7 +275,8 @@
                         android:layout_marginTop="15dp"
                         android:fontFamily="@font/open_sans"
                         android:text="Секунду..."
-                        android:textSize="18dp" />
+                        android:textSize="18dp"
+                        android:textIsSelectable="true" />
                     <TextView
                         android:id="@+id/btn_aboutcourse_1"
                         style="?android:attr/borderlessButtonStyle"
@@ -303,7 +312,8 @@
                         android:layout_marginTop="15dp"
                         android:fontFamily="@font/open_sans"
                         android:text="Секунду..."
-                        android:textSize="18dp" />
+                        android:textSize="18dp"
+                        android:textIsSelectable="true" />
 
 
                     <!-- Lessons !-->

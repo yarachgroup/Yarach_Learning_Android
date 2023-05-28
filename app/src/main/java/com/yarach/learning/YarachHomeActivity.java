@@ -22,6 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.yarach.learning.adapters.MyListAdapter;
+import com.yarach.learning.ui.login.LoginActivity;
 
 import org.w3c.dom.Text;
 
@@ -66,7 +67,7 @@ public class YarachHomeActivity extends AppCompatActivity {
         File file = new File(path);
 
         if (!file.exists()) {
-            Intent intent = new Intent(YarachHomeActivity.this, MainActivity.class);
+            Intent intent = new Intent(YarachHomeActivity.this, LoginActivity.class);
             startActivityForResult(intent, REQUEST_CODE_HOME);
             finish();
         }

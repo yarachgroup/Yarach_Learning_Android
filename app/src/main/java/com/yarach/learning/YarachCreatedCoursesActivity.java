@@ -16,6 +16,8 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.yarach.learning.ui.login.LoginActivity;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -80,7 +82,7 @@ public class YarachCreatedCoursesActivity extends AppCompatActivity {
         File file = new File(path);
 
         if (!file.exists()) {
-            Intent intent = new Intent(YarachCreatedCoursesActivity.this, MainActivity.class);
+            Intent intent = new Intent(YarachCreatedCoursesActivity.this, LoginActivity.class);
             startActivityForResult(intent, REQUEST_CODE_ACT);
             finish();
         }
